@@ -1,0 +1,33 @@
+function superDigito(n, k) {
+    //soma os valores de n
+    //multiplica por 4
+    //soma o resultado
+
+
+    /// tranfromar num array
+
+    n = [...n].map(Number)
+    let soma = 0
+
+
+    for (let i = 0; i < n.length; i++) {
+        soma += n[i]
+    }
+
+    let mult = soma * k
+
+
+    let array2 = []
+
+    console.log([...String(mult)])
+    array2 = [...String(mult)].map(Number)
+    return array2.reduce((soma, v) => soma + v)
+
+
+    // for (let i = 0; i < array2.length; i++) {
+    //     soma2 += array2[i]
+    // }
+    // return soma2
+}
+
+console.log(superDigito("9875", 4))
