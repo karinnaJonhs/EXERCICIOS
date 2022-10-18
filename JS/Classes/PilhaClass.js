@@ -1,8 +1,3 @@
-/*
-
-
-*/
-
 class Pilha {
 
     constructor(capacidade) {
@@ -20,7 +15,6 @@ class Pilha {
         } else {
             return this.pilha.push(elem)
         }
-
     }
 
     remover() {
@@ -29,7 +23,6 @@ class Pilha {
         } else {
             return this.pilha.pop()
         }
-
 
     }
 
