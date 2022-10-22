@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="res"></p>
+
+
+    <script>
+
+
+/*function teoremaDePitagoras(c1, c2) {
+    let mult= (c1 ** 2) + (c2 ** 2)  
+    hipotenusa = Math.sqrt(mult)
+    return hipotenusa
+}
+
+teoremaDePitagoras(2,3)
+document.getElementById("hip").innerHTML = hipotenusa
+*/
+function calculaDiasAteAoNatal(dia, mes){
+    let x = 0
+    let y = 0
+
+    if (mes == 1){
+        if(dia >=1 && dia <= 31){
+            x = 31 - dia
+            y = 328 + x
+            return `Faltam ${y} dias até o Natal.`
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+        }
+    }else if(mes == 2){
+        if (dia >= 1 && dia <= 28){
+            x = 28 - dia
+            y = 300 + x
+            return `Faltam ${y} dias até o Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 28."
+        }
+        
+
+    }else if(mes == 3){
+        if (dia >= 1 && dia <= 31){
+            x = 31 - dia
+            y = 269 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+                }
+
+    }else if(mes == 4){
+        if (dia >= 1 && dia <= 30){
+            x = 30 - dia
+            y = 239 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 30."
+                        }
+    }else if(mes == 5){
+        if (dia >= 1 && dia <= 31){
+            x = 31 - dia
+            y = 208 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+        }
+    }else if(mes == 6){
+      if(dia >= 1 && dia <= 30){
+            x = 30 - dia
+            y = 178 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 30."
+                }
+    }else if(mes == 7){
+        if (dia >= 1 && dia <= 31){
+            x = 31 - dia
+            y = 147 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+                }
+    }else if(mes == 8){
+        if (dia >= 1 && dia <= 31){
+            x = 31 - dia
+            y = 116 + x
+            return `Faltam ${y} dias até o Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+                }
+    }else if(mes == 9){
+        if (dia >= 1 && dia <= 30){
+            x = 30 - dia
+            y = 86 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 30."
+                }
+    }else if(mes == 10){
+        if (dia >= 1 && dia <= 31){
+            x = 31 - dia
+            y = 55 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+                }
+        
+    }else if(mes == 11){
+        if (dia >= 1 && dia <= 30){
+            x = 30 - dia
+            y = 25 + x
+            return `Faltam ${y} dias até ao Natal.`
+
+        }else{
+            return "Por favor introduza um dia entre 1 e 30."
+                }
+    }else if(mes == 12){
+        if (dia >= 1 && dia < 24){
+            x = 25 - dia
+            return `Faltam ${x} dias até ao Natal.`
+        }else if(dia == 24){
+            return "Falta 1 dia até ao Natal."
+
+        }else if(dia == 25){
+            return "Hoje é Natal!"
+        }else if(dia > 25 && dia <= 31){
+            x = 31 - dia
+            y = 359 + x
+            return `Faltam ${y} dias até ao Natal`
+        }else{
+            return "Por favor introduza um dia entre 1 e 31."
+        }
+
+
+    }else{
+        return "Por favor introduza um mês entre 1 e 12."
+    }
+
+}
+console.log(calculaDiasAteAoNatal(3, 11))
+
+</script>
+
+</body>
+</html>

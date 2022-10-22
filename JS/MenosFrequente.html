@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menos Frequente</title>
+</head>
+<body>
+    <script>
+let bolo = [2, 1, 0, 2]
+
+function calculaMenorMaisRaroArray(array) {
+
+let mif = 9999999999999;
+let m = 0
+let item
+let menores = []
+let itemm
+
+for (let i = 0; i < array.length; i++){
+for (let j=i; j < array.length; j++){
+
+    if (array[i] == array[j])
+    m++
+}
+while (mif > m){
+    mif = m
+    item = array[i]
+    menores.push(item)
+}
+
+if (menores.length == 2){
+    itemm = Math.min(...menores)
+    item = itemm}else{
+        item = item            
+}
+m=0
+}
+return item
+
+}
+
+
+        console.log(calculaMenorMaisRaroArray(bolo))
+    </script>
+</body>
+</html>

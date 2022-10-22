@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado Arrays</title>
+</head>
+<body>
+    <script>
+        bolo = [2,3,4]
+
+    /*function retornaQuadradoArray(array) {
+    let arrayq = []
+    for (let i = 0; i < array.length; i++){
+        arrayq.push(array[i]**2)
+    }
+    return arrayq
+}
+*/
+
+function retornaQuadradoArray(array) {
+    
+    let quadrados = array.map(function(item){
+        return Math.pow(item, 2)
+    })
+
+    return quadrados
+}
+
+console.log(retornaQuadradoArray(bolo))
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macieira</title>
+</head>
+<body>
+    <script>
+
+        let bolo = [2, 1]
+        let bala = [1,2,1,1,1]
+        let soma
+        let somaa = []
+        let maior = 0
+        let maiores = []
+        function calculaMelhorColheita(fila1, fila2) {
+
+            
+            for (let i = 0; i < fila1.length || i < fila2.length; i++){
+                if (fila1[i] == null){
+                    fila1[i] = 0
+                }
+
+                if (fila2[i] == null){
+                    fila2[i] = 0
+                }
+                soma = (fila1[i]) + (fila2[i])
+                somaa.push(soma)
+
+                 if (somaa[i] > maior){
+                maior = somaa[i]
+                maiores.push(maior)
+            }
+
+           return maiores
+            }
+}
+
+console.log(calculaMelhorColheita(bala, bolo))
+    </script>
+</body>
+</html>

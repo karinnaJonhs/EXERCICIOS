@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let bolo = ["atum", "pe1ixe", "jaca", "morango", "boi", "machado"]
+        function retornaStringsOrdenadas(array) {
+
+            let done = false
+            while (!done){
+                done = true
+                for (let i = 1; i < array.length; i += 1){
+                    if (array[i - 1].length < array[i].length){
+                        done = false
+                        let tmp = array[i -1]
+                        array[i - 1] = array[i]
+                        array[i] = tmp
+                    }
+                }
+            }
+            return array
+}
+console.log(retornaStringsOrdenadas(bolo))
+    </script>
+</body>
+</html>
